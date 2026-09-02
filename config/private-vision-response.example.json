@@ -1,0 +1,20 @@
+{
+  "model_version": "pillar9-property-vision-2026-01",
+  "room_suggestion": "Kitchen",
+  "detection_batch": {
+    "frame_id": "selected-frame-123",
+    "source": "Pillar9PrivateVision",
+    "detections": [{
+      "label": "quartz countertop",
+      "confidence": 0.91,
+      "box": {"x": 0.08, "y": 0.48, "width": 0.80, "height": 0.23},
+      "model_version": "pillar9-property-vision-2026-01"
+    }]
+  },
+  "facts": [{
+    "field_key": "kitchen_features",
+    "value": ["quartz countertop"],
+    "confidence": 0.78,
+    "reason_codes": ["PRIVATE_VISION_MODEL", "VISUAL_ONLY_REQUIRES_CONFIRMATION"]
+  }]
+}

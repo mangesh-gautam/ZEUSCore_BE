@@ -1,0 +1,18 @@
+services:
+  zeus-core:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - zeus-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health/ready')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  zeus-data:

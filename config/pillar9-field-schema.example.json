@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "pillar9-property-v1",
+  "source": "zeus-phone-vision-voice",
+  "fields": [
+    {"key": "unparsed_address", "type": "string", "required": true, "material": true},
+    {"key": "property_type", "type": "enum", "required": true, "material": true},
+    {"key": "bedrooms_total", "type": "integer", "required": true, "material": true},
+    {"key": "bathrooms_total", "type": "number", "required": true, "material": true},
+    {"key": "living_area_sqft", "type": "integer", "unit": "sqft", "required": true, "material": true},
+    {"key": "list_price", "type": "currency", "currency": "CAD", "required": true, "material": true},
+    {"key": "year_built", "type": "integer", "required": false, "material": true},
+    {"key": "garage_spaces", "type": "number", "required": false, "material": true},
+    {"key": "fireplaces_total", "type": "integer", "required": false, "material": false},
+    {"key": "heating", "type": "string", "required": false, "material": false},
+    {"key": "cooling", "type": "string", "required": false, "material": false},
+    {"key": "appliances", "type": "string[]", "required": false, "material": false},
+    {"key": "kitchen_features", "type": "string[]", "required": false, "material": false},
+    {"key": "amenities", "type": "string[]", "required": false, "material": false},
+    {"key": "exterior_features", "type": "string[]", "required": false, "material": false}
+  ]
+}
